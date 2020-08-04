@@ -10,7 +10,7 @@ header {
 
 .hdr-logo-cont,
 .hdr-menu-icon-cont,
-.hdr-categories-cont{
+.hdr-categories-cont {
   display: flex;
   align-items: center;
 }
@@ -25,11 +25,31 @@ header {
 }
 
 .hdr-categories-cont {
-  grid-column: 3/3;
   display: none;
+  grid-column: 3/3;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.hdr-category{
+  
 }
 
 .main-logo {
   width: 25%;
   max-width: 80px;
+}
+
+@media only screen and (min-width: 767px) {
+  header {
+    i.fa {
+      display: none;
+    }
+  }
+
+  .hdr-categories-cont {
+    display: flex;
+    font-size: .8rem;
+  }
+
 }

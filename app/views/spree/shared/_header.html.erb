@@ -1,8 +1,8 @@
 <header>
   <div class=".hdr-logo-cont">
-  <a href="#">
-    <%= image_tag "logos/optistore.png", alt: "logo", class: "main-logo" %>
-  </a>
+    <a href="#">
+      <%= image_tag "logos/optistore.png", alt: "logo", class: "main-logo" %>
+    </a>
   </div>
   <div class="hdr-menu-icon-cont">
     <a href="#">
@@ -10,8 +10,14 @@
     </a>
   </div>
   <div class="hdr-categories-cont">
-    div 3
+    <a class="hdr-category" href="#">Hombre</a>
+    <a class="hdr-category" href="#">Mujer</a>
+    <a class="hdr-category" href="#">Unisex</a>
+    |
+    <div class="hdr-icons">
+      <i>1</i>
+      <i>2</i>
+      <i>3</i>
+    </div>
   </div>
-  <!-- <%= render partial: "spree/shared/nav_bar" %> -->
-  <!-- <%= render partial: "spree/shared/main_nav_bar" if store_menu? %> -->
 </header>
