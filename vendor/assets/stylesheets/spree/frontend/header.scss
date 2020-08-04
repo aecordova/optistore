@@ -1,0 +1,35 @@
+header {
+  display: grid;
+  grid-template-columns: repeat(1fr, 3);
+  // background-color: gray;
+  padding: 10px;
+  i.fa {
+    font-size: 25px;
+  }
+}
+
+.hdr-logo-cont,
+.hdr-menu-icon-cont,
+.hdr-categories-cont{
+  display: flex;
+  align-items: center;
+}
+
+.hdr-logo-cont {
+  grid-column: 1/2;
+}
+
+.hdr-menu-icon-cont {
+  grid-column: 2/3;
+  justify-content: flex-end;
+}
+
+.hdr-categories-cont {
+  grid-column: 3/3;
+  display: none;
+}
+
+.main-logo {
+  width: 25%;
+  max-width: 80px;
+}
