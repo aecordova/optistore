@@ -1,23 +1,24 @@
 <header>
+  <div class="hdr-categories-cont">
+    <div class="hdr-categories">
+      <a class="hdr-category" href="#">Hombre</a>
+      <a class="hdr-category" href="#">Mujer</a>
+      <a class="hdr-category" href="#">Unisex</a>
+    </div>
+  </div>
   <div class="hdr-logo-cont">
     <a href="#" class="logo-link">
       <%= image_tag "logos/logo_completo.png", alt: "logo", class: "main-logo" %>
+      <%= image_tag "logos/logo_nombre.png", alt: "logo", class: "name-logo" %>
     </a>
   </div>
   <div class="hdr-menu-icon-cont">
-    <a href="#">
-      <i class="fa fa-bars menu-icon"></i>
-    </a>
-  </div>
-  <div class="hdr-categories-cont">
-    <a class="hdr-category" href="#">Hombre</a>
-    <a class="hdr-category" href="#">Mujer</a>
-    <a class="hdr-category" href="#">Unisex</a>
-    |
     <div class="hdr-icons">
-      <i class="fa fa-search"></i>
-      <i class="fa fa-user"></i>
-      <i class="fa fa-shopping-cart"></i>
+      <a href="#" class='hdr-icon-menu'><i class="fa fa-bars"></i> </a>
+      <a href="#" class='hdr-icon-search'><i class="fa fa-search"></i></a>
+      <span class="hdr-icon-divider">|</span>
+      <a href="#" class='hdr-icon-login'><i class="fa fa-user"></i></a>
+      <a href="#" class='hdr-icon-cart'><i class="fa fa-shopping-cart"></i></a>
     </div>
   </div>
 </header>
