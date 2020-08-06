@@ -1,0 +1,31 @@
+.value-prop {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  border-bottom: 1px solid lightgrey;
+  margin-bottom: 5px;
+  align-items: center;
+  // background-color: lightgrey;
+  // border-radius: 15px;
+}
+
+.value-text-cont{
+  padding: 0 10px;
+}
+
+.value-p{
+  margin-top: 0;
+}
+
+.value-img-cont{
+  text-align: center;
+}
+
+.value-img {
+  transform: rotate(-15deg);
+  width: 100%;
+}
+
+.value-title{
+  padding-top: .5rem;
+}
+

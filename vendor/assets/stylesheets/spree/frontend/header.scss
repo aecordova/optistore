@@ -4,6 +4,8 @@ header {
   padding: 10px 0;
   font-size: 25px;
   line-height: 25px;
+  color: #1f7fb2;
+  border-bottom: 1px solid lightgrey;
 }
 
 .hdr-logo-cont,
@@ -65,6 +67,10 @@ header {
   display: none;
 }
 
+.hdr-icon-divider {
+  color: lightgrey;
+}
+
 @media only screen and (min-width: 767px) {
   header {
     grid-template-columns: 33% 34% 33%;
@@ -95,6 +101,6 @@ header {
   .hdr-icon-login,
   .hdr-icon-cart,
   .hdr-icon-divider {
-     display: inline;
+    display: inline;
   }
 }
