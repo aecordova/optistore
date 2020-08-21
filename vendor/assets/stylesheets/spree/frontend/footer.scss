@@ -1,14 +1,18 @@
 .footer {
-  width: 100%;
   display: grid;
   justify-content: center;
   background-color: rgba($color: #1f7fb2, $alpha: 1);
+  padding: 25px;
   color: #fff;
   font-size: 0.8rem;
   svg {
     height: 35px;
     width: 35px;
     fill: #fff;
+    &:hover {
+      transform: scale(1.2);
+      transition: transform .2s;
+    }
   }
 }
 
