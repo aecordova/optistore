@@ -1,17 +1,9 @@
-<div class="value-prop">
-  <div class="value-text-cont">
-    <h1 class="value-title">Header text Loprem Ipsum something</h1>
-    <p class="value-p">
-      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur, excepturi nobis! Doloremque eum soluta, officia ea velit voluptatum neque odio quae? Provident facilis ullam laudantium dolorem maiores exercitationem repudiandae corporis. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias alias laudantium esse inventore quidem eveniet aliquid minus. Odit possimus odio rem, rerum voluptatibus in, tenetur alias excepturi magnam ab ipsum? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt tempore, quasi quibusdam vero repellendus dolores ut veritatis iusto deleniti tenetur hic quisquam at dignissimos error sunt porro sequi fugit laborum.
-    </p>
-  </div>
-  <div class="value-img-cont">
-    <%= image_tag 'stock/stock_glasses.png', class: 'value-img' %>
-  </div>
-</div>
+<%= render partial: 'spree/content/value_prop' %>
 
 <div data-hook="homepage_products">
   <% cache(cache_key_for_products) do %>
     <%= render partial: 'spree/shared/products', locals: { products: @products } %>
   <% end %>
 </div>
+
+<%= render partial:'spree/shared/newsletter_banner' %>

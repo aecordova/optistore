@@ -1,0 +1,42 @@
+.footer {
+  width: 100%;
+  display: grid;
+  justify-content: center;
+  background-color: rgba($color: #1f7fb2, $alpha: 1);
+  color: #fff;
+  font-size: 0.8rem;
+  svg {
+    height: 35px;
+    width: 35px;
+    fill: #fff;
+  }
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+}
+
+.footer-social {
+  display: flex;
+}
+
+.social-links,
+.footer-contact-us {
+  display: flex;
+  span {
+    font-weight: bold;
+  }
+  a,
+  span {
+    padding: 10px;
+  }
+}
+
+.footer-contact-us {
+  flex-direction: column;
+  li {
+    padding-left: 20px;
+  }
+}
