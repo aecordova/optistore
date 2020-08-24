@@ -1,13 +1,17 @@
 .product-list {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(1, 1fr);
   li {
-    display:flex;
+    display: flex;
+    margin:0;
     flex-direction: column;
+    width: 100%;
   }
 }
 
 .product-image-box {
+  width: 100%;
+  text-align: center;
   img {
     max-width: 100%;
   }
@@ -17,18 +21,37 @@
   font-size: 1rem;
   padding: 5px;
   margin-bottom: 5px;
+  text-align: center;
 }
 
-.product-price{
+.price-container {
+  text-align: center;
+}
+
+.product-price {
   font-size: 1rem;
 }
 
-.products-title{
+.products-title {
   text-align: center;
   text-transform: uppercase;
   padding: 5px;
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: "Josefin Sans", sans-serif;
   color: #fff;
-  font-size: .8rem;
+  font-size: 0.8rem;
   background-color: #848484;
 }
+
+@media only screen and (min-width: 600px) {
+  .product-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (min-width: 767px) {
+  .product-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+

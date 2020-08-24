@@ -22,7 +22,7 @@
 </div>
 
 <% if products.any? %>
-  <ul id="products" class="product-list">
+  <ul  class="product-list">
     <% products.each do |product| %>
       <% url = spree.product_path(product, taxon_id: @taxon.try(:id)) %>
       <li id="product_<%= product.id %>" class="product-item" itemscope itemtype="http://schema.org/Product">
@@ -31,7 +31,7 @@
             <%= link_to(render('spree/shared/image', image: product.gallery.images.first, size: :small, itemprop: "image"), url, itemprop: 'url') %>
           </div>
           <%= link_to truncate(product.name, length: 50), url, class: 'product-name', title: product.name %>
-          <span itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+          <span class="price-container" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
             <% if price = product.price_for(current_pricing_options) %>
               <span class="product-price" itemprop="price" content="<%= price.to_d %>">
                 <%= price.to_html %>
