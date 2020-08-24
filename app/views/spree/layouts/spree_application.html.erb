@@ -7,30 +7,17 @@
   <head data-hook="inside_head">
     <%= render partial: 'spree/shared/head' %>
   </head>
-  <body class="<%= body_class %>" data-hook="body">
-
-    <div>
-
+  <body>
       <%= render partial: 'spree/shared/header' %>
-
-      <div id="wrapper" class="" data-hook>
-
+      <div id="wrapper" class="">
         <%= taxon_breadcrumbs(@taxon) %>
-
         <%= render partial: 'spree/shared/sidebar' if content_for? :sidebar %>
-
         <div id="content" >
           <%= flash_messages %>
           <%= yield %>
         </div>
-
         <%= yield :templates %>
-
       </div>
-
       <%= render partial: 'spree/shared/footer' %>
-
-    </div>
-
   </body>
 </html>

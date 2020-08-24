@@ -1,6 +1,6 @@
 <%= render partial: 'spree/content/value_prop' %>
 
-<div data-hook="homepage_products">
+<div>
   <% cache(cache_key_for_products) do %>
     <%= render partial: 'spree/shared/products', locals: { products: @products } %>
   <% end %>
