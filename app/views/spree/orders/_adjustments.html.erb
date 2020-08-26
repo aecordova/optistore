@@ -1,17 +1,17 @@
 <tbody id="cart_adjustments" data-hook>
   <% if @order.line_item_adjustments.exists? %>
     <% @order.line_item_adjustments.promotion.eligible.group_by(&:label).each do |label, adjustments| %>
-      <%= render "spree/orders/adjustment_row", label: label, adjustments: adjustments, type: t('spree.promotion') %>
+      <%= render "spree/orders/adjustment_row", label: label, adjustments: adjustments, type: 'Promociones' %>
     <% end %>
   <% end %>
 
   <% @order.all_adjustments.tax.eligible.group_by(&:label).each do |label, adjustments| %>
-    <%= render "spree/orders/adjustment_row", label: label, adjustments: adjustments, type: t('spree.tax') %>
+    <%= render "spree/orders/adjustment_row", label: label, adjustments: adjustments, type: 'Impuestos' %>
   <% end %>
 
   <% @order.shipments.each do |shipment| %>
     <tr>
-      <td colspan="4" align='right'><h5><%= t('spree.shipping') %>: <%= shipment.shipping_method.name %></h5></td>
+      <td colspan="4" align='right'><h5>'Envio ': <%= shipment.shipping_method.name %></h5></td>
       <td colspan='2'>
         <h5><%= shipment.display_total_before_tax %></h5>
       </td>
@@ -19,6 +19,6 @@
   <% end %>
 
   <% @order.adjustments.eligible.group_by(&:label).each do |label, adjustments| %>
-    <%= render "spree/orders/adjustment_row", label: label, adjustments: adjustments, type: t('spree.adjustment') %>
+    <%= render "spree/orders/adjustment_row", label: label, adjustments: adjustments, type: 'Ajuste' %>
   <% end %>
 </tbody>

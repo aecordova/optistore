@@ -3,7 +3,11 @@ a {
 }
 
 .primary {
-  background-color: #1f7fb2;
+  background-color: #1f7fb2 !important;
+}
+
+.gray {
+  background-color:#848484 !important;
 }
 
 li {
@@ -13,6 +17,19 @@ li {
 body{
   font-family: 'Roboto', sans-serif;
   min-width: 320px;
+  height: 100%;
+}
+
+#content, #wrapper{
+  height: 100%;
+}
+
+button, .button, a.button, input[type = 'submit'] {
+  border-radius: 25px;
+  font-size: 0.8rem;
+  border: none;
+  outline: none;
+  padding: 5px 15px;
 }
 
 #wrapper {
