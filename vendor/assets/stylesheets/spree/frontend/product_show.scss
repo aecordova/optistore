@@ -1,0 +1,128 @@
+.thumbnails {
+  padding: 5px;
+  margin: 0;
+  text-align: center;
+  li {
+    border: none;
+  }
+}
+.main-image {
+  border: 0 !important;
+}
+.main-product-title {
+  color: #fff;
+  text-align: center;
+  background-color: #1f7fb2;
+  font-size: 1.5rem;
+  padding: 5px;
+}
+
+#cart-form {
+  background-color: rgba($color: #1f7fb2, $alpha: 0.2);
+  padding: 5px;
+  form {
+    height: 100%;
+  }
+}
+
+.product-pricing-box {
+  padding-top: 10px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  .product-price {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    h6 {
+      text-transform: uppercase;
+      padding-right: 10px;
+    }
+  }
+}
+
+.add-to-cart {
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+
+.add-to-cart-form {
+  margin: 0 auto;
+  width: fit-content;
+  border-radius: 25px;
+  padding: 1px;
+  input {
+    border: 0;
+    padding: 3px !important;
+    outline: none;
+    background-color: transparent;
+    border-bottom: 1px solid #fff;
+    color: #484848;
+    text-align: center;
+    font-size: 1rem;
+  }
+}
+
+#product-variants {
+  text-align: center;
+}
+
+#taxon-crumbs {
+  text-align: center;
+}
+
+#add-to-cart-button {
+  border-radius: 25px;
+  border: none;
+  outline: none;
+  height: 100%;
+}
+
+.price {
+  font-size: x-large;
+  span {
+    color: #1f7fb2;
+  }
+}
+
+.product-properties {
+  text-align: center;
+  h6 {
+    text-transform: uppercase;
+    background-color: #848484;
+    font-size:.8rem;
+    color: #fff;
+    padding: 5px;
+  }
+}
+
+#product-description {
+  padding: 10px;
+}
+
+@media only screen and (min-width: 767px) {
+  #inside-product-cart-form {
+    display:flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  
+  #product-variants {
+    order: -1;
+  }
+  
+  .product-pricing-box{
+    grid-template-columns: 1fr;
+    order: 0;
+  }
+
+  .product-price {
+    margin-bottom: 20px;
+  }
+
+  #product-images{
+    display: grid;
+    grid-template-columns: 70% 30%;
+  }
+}
