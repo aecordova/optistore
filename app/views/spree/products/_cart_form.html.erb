@@ -16,7 +16,7 @@
             <link itemprop="availability" href="http://schema.org/InStock" />
           <% elsif @product.variants.empty? %>
             <br />
-            <span class="out-of-stock"><%= t('spree.out_of_stock') %></span>
+            <span class="out-of-stock">PRODUCTO AGOTADO!</span>
           <% end %>
         </div>
         <div class="add-to-cart">

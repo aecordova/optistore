@@ -5,7 +5,7 @@ Spree.config do |config|
   # Core:
 
   # Default currency for new sites
-  config.currency = "USD"
+  config.currency = "MXN"
 
   # from address for transactional emails
   config.mails_from = "store@example.com"
@@ -61,11 +61,11 @@ Spree.config do |config|
 end
 
 Spree::Frontend::Config.configure do |config|
-  config.locale = 'en'
+  config.locale = 'es'
 end
 
 Spree::Backend::Config.configure do |config|
-  config.locale = 'en'
+  config.locale = 'es'
 
   # Uncomment and change the following configuration if you want to add
   # a new menu item:
