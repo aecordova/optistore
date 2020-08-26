@@ -1,3 +1,11 @@
+.cart-is-empty {
+  text-align: center;
+  p {
+    font-size: 0.8rem;
+    font-weight: bold;
+  }
+}
+
 .cart-buttons {
   display: flex;
   justify-content: flex-end;
@@ -27,7 +35,7 @@ p#clear_cart_link {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  max-width:350px;
+  max-width: 350px;
   margin: 15px auto;
   a {
     padding: 7px 15px;
@@ -35,8 +43,8 @@ p#clear_cart_link {
 }
 
 @media only screen and (min-width: 600px) {
-  .coupon-and-empty-cart{
+  .coupon-and-empty-cart {
     display: grid;
-    grid-template-columns: repeat(2 , 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
 }

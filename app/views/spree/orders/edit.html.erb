@@ -1,9 +1,9 @@
 <% @body_id = 'cart' %>
 <div>
-  <h1>CARRITO DE COMPRAS</h1>
+  <h1 class="main-product-title">CARRITO DE COMPRAS</h1>
   <% if @order.line_items.empty? %>
-    <div data-hook="empty_cart">
-      <p>Carrito Vacio! /n :(</p>
+    <div class="cart-is-empty">
+      <p>Tu carrito está vacío <br> :(</p>
       <p><%= link_to 'Seguir Comprando', products_path, class: 'button continue' %></p>
     </div>
   <% else %>
