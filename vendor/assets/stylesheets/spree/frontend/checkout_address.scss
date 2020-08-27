@@ -1,0 +1,26 @@
+.checkout_form_wrapper{
+  form{
+    display: grid;
+  }
+  .client-email{
+    display: flex;
+    // flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    label {
+      margin-right: 15px;
+    }
+  }
+}
+
+@media only screen and (min-width:600px) {
+  .checkout_form_wrapper{
+    fieldset{
+      .inner{
+        display: grid;
+        grid-template-columns: repeat(2 , 1fr);
+        grid-column-gap: 15px;
+      }
+    }
+  } 
+}
