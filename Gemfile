@@ -6,6 +6,7 @@ gem 'solidus'
 gem 'solidus_auth_devise'
 gem 'solidus_i18n'
 gem 'rails-i18n'
+gem 'solidus_stripe'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 6.0.3', '>= 6.0.3.2'
 # Use sqlite3 as the database for Active Record

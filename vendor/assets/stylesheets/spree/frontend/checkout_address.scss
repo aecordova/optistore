@@ -2,24 +2,43 @@
   form{
     display: grid;
   }
-  .client-email{
+  .client-email, .form-buttons{
     display: flex;
-    // flex-direction: column;
     justify-content: center;
     align-items: center;
     label {
       margin-right: 15px;
     }
   }
+
+  .form-buttons {
+    padding: 10px;
+  }
 }
 
 @media only screen and (min-width:600px) {
   .checkout_form_wrapper{
-    fieldset{
+    #billing, #shipping {
       .inner{
         display: grid;
         grid-template-columns: repeat(2 , 1fr);
         grid-column-gap: 15px;
+      }
+    }
+    .stock-contents {
+      margin: 0 auto;
+    }
+
+    .radios {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      label {
+        display: flex;
+        align-items: center;
+        input, span {
+          margin-right: 5px;
+        }
       }
     }
   } 

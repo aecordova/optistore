@@ -903,7 +903,7 @@ es:
     flexible_rate: Cantidad variable
     forgot_password: "¿Olvidaste tu contraseña?"
     free_shipping: Envío gratuito
-    free_shipping_amount:  Monto envío gratuito
+    free_shipping_amount: Monto envío gratuito
     front_end: Sistema Interno
     gateway: Pasarela
     gateway_config_unavailable: Pasarela no disponible por configuración
@@ -973,7 +973,7 @@ es:
     intercept_email_address: Interceptar dirección de Email
     intercept_email_instructions: Sustituir el receptor del email con ésta dirección.
     internal_name:
-    invalid_credit_card:
+    invalid_credit_card: Tarjeta de Credito Invalida
     invalid_exchange_variant:
     invalid_payment_provider: Proveedor de pago no válido
     invalid_promotion_action: Acción de promoción inválida
@@ -1054,7 +1054,7 @@ es:
     my_account: Mi cuenta
     my_orders: Mis pedidos
     name: Nombre
-    name_on_card:
+    name_on_card: Nombre como aparece en la tarjeta
     name_or_sku: Nombre o código de producto
     new: Nuevo
     new_adjustment: Nuevo Ajuste
@@ -1154,8 +1154,7 @@ es:
         subtotal:
         total:
       confirm_email:
-        dear_customer: |
-          Querido cliente,
+        dear_customer: Querido cliente,
         instructions: Por favor revise y mantenga la siguiente información del pedido para sus registros
         order_summary: Resumen del pedido
         subject: Confirmación de pedido
@@ -1163,7 +1162,7 @@ es:
         thanks: Gracias por su negocio
         total:
     order_not_found: No pudimos encontrar su orden. Por favor inténtalo de nuevo
-    order_number:
+    order_number: Numero de Orden
     order_please_refresh: El pedido no está listo para ser completado. Por favor, actualice los totales.
     order_processed_successfully: Su pedido se ha procesado correctamente
     order_resumed:
@@ -1397,7 +1396,7 @@ es:
     sales_totals: Total de Ventas
     save_and_continue: Guardar y continuar
     save_my_address: Guardar mi dirección
-    say_no: false
+    say_no: 'No'
     say_yes: Sí
     scope: Alcance
     search: Buscar
@@ -1605,7 +1604,7 @@ es:
     update: Actualizar
     updating: Actualizando
     usage_limit: Límite de uso
-    use_app_default:
+    use_app_default: Usar Default de la aplicacion
     use_billing_address: Usar la dirección de facturación
     use_new_cc: Usar una tarjeta diferente
     use_s3: Usar Amazon S3 para imágenes
