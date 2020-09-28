@@ -40,12 +40,23 @@
   }
 
   #payment-methods {
-    max-width: 250px;
+    max-width: 400px;
     margin: 0 auto;
     .field {
       display: flex;
       flex-direction: column;
     }
+  }
+}
+#order_summary {
+  legend {
+    text-align: center;
+  }
+}
+
+#order{
+  p {
+    text-align: center;
   }
 }
 

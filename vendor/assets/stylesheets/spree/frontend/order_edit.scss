@@ -45,6 +45,6 @@ p#clear_cart_link {
 @media only screen and (min-width: 600px) {
   .coupon-and-empty-cart {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    // grid-template-columns: repeat(2, 1fr);
   }
 }

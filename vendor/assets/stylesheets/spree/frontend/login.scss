@@ -1,4 +1,8 @@
-#existing-customer, #new-customer, #forgot-password {
+#existing-customer, 
+#new-customer, 
+#forgot-password,
+#new_spree_user,
+#guest_checkout {
  margin: 15px 0;
  display: flex;
  flex-direction: column;

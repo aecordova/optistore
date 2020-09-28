@@ -36,6 +36,10 @@ button, .button, a.button, input[type = 'submit'] {
   padding-top: 105px;
 }
 
+h1, h6, .flash {
+  text-align: center;
+}
+
 
 @media only screen and (min-width: 600px) {
   #wrapper{
