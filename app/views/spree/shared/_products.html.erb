@@ -31,14 +31,18 @@
             <%= link_to(render('spree/shared/image', image: product.gallery.images.first, size: :small, itemprop: "image"), url, itemprop: 'url') %>
           </div>
           <%= link_to truncate(product.name, length: 50), url, class: 'product-name', title: product.name %>
-          <span class="price-container" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+          <div class="price-container" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
             <% if price = product.price_for(current_pricing_options) %>
               <span class="product-price" itemprop="price" content="<%= price.to_d %>">
-                <%= price.to_html %>
+                <%= price.to_html(options = {
+                  no_cents: true,
+                  thousands_separator: ",",
+                  html_wrap: true,
+                }) %>
               </span>
             <% end %>
             <span itemprop="priceCurrency" content="<%= current_pricing_options.currency %>"></span>
-          </span>
+          </div>
         <% end %>
       </li>
     <% end %>
