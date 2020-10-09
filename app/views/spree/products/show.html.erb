@@ -1,27 +1,27 @@
 <% cache [I18n.locale, current_pricing_options, @product] do %>
   <div itemscope itemtype="http://schema.org/Product">
-    <% @body_id = 'product-details' %>
+    <% @body_id = "product-details" %>
     <h1 class="main-product-title" itemprop="name"><%= @product.name %></h1>
     <div class="">
       <div class="">
         <div id="product-images">
         <div>
-          <div id="thumbnails">
-            <%= render partial: 'thumbnails' %>
-          </div>
           <div class= "main-image" id="main-image">
-            <%= render partial: 'image' %>
+            <%= render partial: "image" %>
+          </div>
+          <div id="thumbnails">
+            <%= render partial: "thumbnails" %>
           </div>
         </div>
           <div id="cart-form">
-            <%= render partial: 'cart_form' %>
+            <%= render partial: "cart_form" %>
           </div>
         </div>
         <div>
-          <%= render partial: 'promotions' %>
+          <%= render partial: "promotions" %>
         </div>
         <div class="product-properties">
-          <%= render partial: 'properties' %>
+          <%= render partial: "properties" %>
         </div>
       </div>
     </div>
@@ -30,10 +30,10 @@
         <div id="product-description">
         <h6>DESCRIPCION:</h6>
           <div itemprop="description">
-            <%= product_description(@product) rescue t('spree.product_has_no_description') %>
+            <%= product_description(@product) rescue t("spree.product_has_no_description") %>
           </div>
         </div>
-        <%= render partial: 'taxons' %>
+        <%= render partial: "taxons" %>
       </div>
     </div>
   </div>

@@ -31,53 +31,54 @@
 
 .product-item {
   position: relative;
-}
-
-.product-name {
-  display: block;
-  text-align: center;
-  font-size: 2.5rem;
-  font-weight: bold;
-  width: 100%;
-  height: fit-content;
-  margin-bottom: 15px;
-}
-
-.price-container {
-  position: absolute;
-  display: flex;
-  width: 100px;
-  height: 100px;
-  bottom: 0;
-  right: 0;
-  background-image: image-url('pricebadge.png');
-  background-clip: border-box;
-  background-position: top left;
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-
-.product-price {
-  font-size: 1rem;
-  font-weight: bold;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  margin: 0;
-  transform: rotate(-30deg);
-  .money-currency-symbol {
-    margin-right: 5px;
+  .product-name {
+    display: block;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    width: 100%;
+    height: fit-content;
+    margin-bottom: 15px;
+  }
+  
+  .price-container {
+    position: absolute;
+    display: flex;
+    width: 100px;
+    height: 100px;
+    bottom: 0;
+    right: 0;
+    background-image: image-url('pricebadge.png');
+    background-clip: border-box;
+    background-position: top left;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  
+  .product-price {
     font-size: 1rem;
-    height: fit-content;
-    color: #fff;
-  }
-  .money-whole {
-    font-size: 1.8rem;
-    height: fit-content;
-    color: #fff;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 0;
+    transform: rotate(-30deg);
+    .money-currency-symbol {
+      margin-right: 5px;
+      font-size: 1rem;
+      height: fit-content;
+      color: #fff;
+    }
+    .money-whole {
+      font-size: 1.8rem;
+      height: fit-content;
+      color: #fff;
+    }
   }
 }
+
+
 
 @media only screen and (min-width: 600px) {
   .product-list {
