@@ -21,34 +21,35 @@
 
 .product-image-box {
   width: 100%;
-  // text-align: center;
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 15px;
   img {
     width: 100%;
   }
 }
+
 .product-item {
   position: relative;
 }
 
 .product-name {
-  text-align: left;
-  font-size: 3rem;
+  display: block;
+  text-align: center;
+  font-size: 2.5rem;
   font-weight: bold;
-  padding: 5px;
-  margin-top: 15px;
-  margin-bottom: 5px;
-  margin-left: 5%;
+  width: 100%;
+  height: fit-content;
+  margin-bottom: 15px;
 }
 
 .price-container {
   position: absolute;
   display: flex;
-  height: 50%;
-  width: 40%;
-  max-width: 120px;
-  max-height: 120px;
+  width: 100px;
+  height: 100px;
   bottom: 0;
-  right: 5%;
+  right: 0;
   background-image: image-url('pricebadge.png');
   background-clip: border-box;
   background-position: top left;
